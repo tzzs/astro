@@ -4,10 +4,10 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 body {
-	font-family: Verdana, sans-serif;
+	font-family: "Segoe UI", "SegoeUI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: auto;
 	padding: 20px;
-	max-width: 65ch;
+	width: 60%;
 	text-align: left;
 	background-color: #fff;
 	word-wrap: break-word;

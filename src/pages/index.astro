@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+// import '../styles/global.css';
 ---
 
 <!DOCTYPE html>
@@ -10,23 +11,23 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body class="">
 		<Header title={SITE_TITLE} />
-		<main class="">
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
+		<main class="bg-white p-5 rounded hover:shadow-xl pb-10">
+			<h1 class="text-3xl font-bold my-10">🧑‍🚀 Hello, Astronaut!</h1>
+			<p class="content">
 				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
 				template serves as a lightweight, minimally-styled starting point for anyone looking to build
 				a personal website, blog, or portfolio with Astro.
 			</p>
-			<p>
+			<p class="content">
 				This template comes with a few integrations already configured in your
 				<code>astro.config.mjs</code> file. You can customize your setup with
 				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
 				React, or Vue to your project.
 			</p>
 			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
+			<ul class="list-disc ml-10">
 				<li>Edit this page in <code>src/pages/index.astro</code></li>
 				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
 				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
@@ -48,3 +49,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.content {
+		@apply leading-6 my-5
+	}
+
+	body {
+		background-color: #f2f2f2;
+		font-family: "Segoe UI", "SegoeUI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+</style>
